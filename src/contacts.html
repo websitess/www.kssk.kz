@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>www.kssk.kz</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    //= template/header.html
+    <div class="page">
+        <div class="bread">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="container">
+                <h1>Контакты<h1>
+            </div>
+            <div id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d81c9506f64c6750b9394585156ecd8b21957d4d8aad7f54dc37baf1123fc0a&amp;width=500&amp;height=400&amp;lang=ru_UA&amp;scroll=true"></script>
+            </div>
+            <div class="bottom">
+               <div class="container">
+                   <div class="cont--list">
+                       <ul>
+                           <li>
+                               <h5>АДРЕС</h5>
+                               <p>Казахстан, г.Алматы, ул. Физули 64</p>
+                           </li>
+                           <li class="phone">
+                               <h5>ТЕЛЕФОНЫ</h5>
+                               <a href="#">+7 (727) 257 09 14</a>
+                               <a href="#">+7 (727) 257 09 14</a>
+                               <a href="#">+7 (727) 257 09 14</a>
+                               <a href="#">+7 (727) 257 09 14</a>
+                               <a href="#">+7 (727) 257 09 14</a>
+                           </li>
+                           <li class="email">
+                               <h5>ПОЧТА</h5>
+                               <a href="#">info@ruazdent.kz</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="request">
+                       <h3>ОСТАВИТЬ ЗАЯВКУ</h3>
+                       <form>
+                           <div class="form">
+                                <div class="left">
+                                    <input type="text" placeholder="Имя" required>
+                                    <input type="text" placeholder="Телефон" class="tel">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="right">
+                                    <textarea rows="7" placeholder="Сообщение"></textarea>
+                                </div>
+                           </div>
+                           <div class="form">
+                               <div class="left">
+                                    <div class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfhrpEUAAAAAAW9AX7eciJla_-ApJ4e5Ixm4v4Z&amp;co=aHR0cDovL29ydGlzLjl6Lmt6Ojgw&amp;hl=ru&amp;v=v1562567553145&amp;size=normal&amp;cb=ibwua91ffdfk" width="304" height="78" role="presentation" name="a-ti2hld9jn78" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                               </div>
+                               <div class="right">
+                                    <input type="submit" class="btn open--modal" value="Оставить заявку" data-modal="#modal--successfully">
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+               </div> 
+            </div>
+        </div>
+    </div>
+    //= template/pageModal.html
+    //= template/footer.html
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/libs.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

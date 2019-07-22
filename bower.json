@@ -1,0 +1,21 @@
+{
+  "name": "activegroup",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "n_side <lost.autumn72@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ], 
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "3.*"
+  }
+}

@@ -1,0 +1,184 @@
+/* footer */
+footer{
+    background-color: $color;
+    .footer-top{
+        position: relative;
+        font-size: 16px;
+        color: #cccde6;
+        border-bottom: 2px solid #34379c;
+        font-family: $light;
+        padding: 90px 0;
+        .container{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        h3{
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+        a{
+            color: #cccde6;
+            display: block;
+            font-family: $light;
+        }
+        ul{
+            @include ul-default;
+            li{
+                margin-bottom: 10px;
+                a{
+                    color: #cccde6;
+                    font-size: 16px;
+                    border-bottom: 1px solid transparent;
+                    display: table;
+                    &:hover{
+                        border-bottom: 1px solid #cccde6;
+                    }
+                }
+                &.active{
+                    a{
+                        border-bottom: 1px solid #cccde6;
+                    }
+                }
+            }
+        }
+        .footer-col{
+            margin: 0 10px;
+            &.logo{
+                .logo{
+                    width: 170px;
+                    height: 140px;
+                    display: block;
+                    >img{
+                        @include contain;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    padding: 15px 0 28px 0;
+                    line-height: 1.4;
+                }
+                .social{
+                    display: flex;
+                    @include ul-default;
+                    li{
+                        a{
+                            margin: 0 9px;
+                            i{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+            .col--phone,
+            .col--email,
+            .col--address,
+            .col--whatsapp{
+                &:after{
+                 color: #fff;   
+                }
+            }
+            .col--email{
+                display: table;
+                &:before{
+		            border-bottom: 1px solid #cccde6;
+                }
+                &:hover{
+                    color: #faa643;
+                }
+            }
+            .col--address p{
+                margin: 0;
+                line-height: 1.4;
+            }
+            .col--phone{
+                margin: 15px 0 0 0;
+                a{
+                    margin-bottom: 5px;
+                }
+            }
+            .col--whatsapp{
+                margin: 0 0 15px 0;
+            }
+        }
+        @media screen and (max-width: 768px){
+            padding: 45px 0;
+            h3{
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            .footer-col{
+                margin: 10px;
+                &.logo{
+                    .logo{
+                        width: 250px;
+                    }
+                    p{
+                        margin: 10px 0;
+                        padding: 10px 0 0 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        @media screen and (max-width: 400px){
+            padding: 25px 0;
+            h3{
+                font-size: 18px;
+            }
+        }
+    }
+    .footer-bottom{
+        padding: 23px 0;
+        font-family: $light;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                font-size: 12px;
+                color: #cccde6;
+                margin: 0;
+            }
+            .artmedia{
+                position: relative;
+                padding-right: 130px;
+                color: #cccde6;
+                font-size: 12px;
+                &:hover{
+                    color: #faa643;
+                }
+                >img{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                }
+            }
+        }
+        @media screen and (max-width: 768px){
+            .container{
+                display: block;
+                text-align: center;
+                p{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+                .artmedia{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+/* footer */
